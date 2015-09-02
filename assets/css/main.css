@@ -115,7 +115,7 @@ header {
   width: 100%;
   width: 100%;
   vertical-align: middle;
-  box-shadow: 0 3px rgba(250, 250, 250, 0.4);
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3);
   position: relative; }
 
 .top-nav::after {
@@ -133,7 +133,7 @@ header {
   color: white;
   padding: 4px 10px;
   text-align: center;
-  box-shadow: 0 3px rgba(250, 250, 250, 0.4);
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3);
   margin-top: 10px;
   margin-bottom: 10px;
   text-decoration: none; }
@@ -155,7 +155,7 @@ header {
   margin: 10px 0;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 3px rgba(250, 250, 250, 0.4); }
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3); }
   .banner::after {
     clear: both;
     content: "";
@@ -172,11 +172,22 @@ header {
   line-height: 250px;
   vertical-align: middle; }
 
+.banner-buttons {
+  float: left;
+  display: block;
+  margin-right: 0.86418%;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center; }
+  .banner-buttons:last-child {
+    margin-right: 0; }
+
 .articles {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1rem; }
+  line-height: 1rem;
+  margin-top: 10px; }
   .articles::after {
     clear: both;
     content: "";
@@ -190,7 +201,7 @@ header {
   background: white;
   padding: 20px;
   position: relative;
-  box-shadow: 0 3px rgba(250, 250, 250, 0.4); }
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3); }
   .article:last-child {
     margin-right: 0; }
   .article::after {
@@ -236,7 +247,7 @@ header {
   height: 0;
   width: 0;
   border-bottom: 25px solid transparent;
-  border-left: 10px solid rgba(250, 250, 250, 0.6);
+  border-left: 10px solid rgba(250, 250, 250, 0.3);
   border-top: 25px solid transparent;
   position: absolute;
   top: 103px;
@@ -252,7 +263,7 @@ header {
   top: 100px;
   left: -172px;
   padding: 10px;
-  box-shadow: 0 3px rgba(250, 250, 250, 0.4); }
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3); }
 
 .side-pointer-triangle {
   height: 0;
@@ -328,7 +339,7 @@ header {
   background: url(../img/sk8er-4.png);
   background-size: cover;
   background-position: top right;
-  box-shadow: 0 3px rgba(250, 250, 250, 0.4); }
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3); }
   .skateboarder-one:last-child {
     margin-right: 0; }
 
@@ -344,7 +355,7 @@ header {
   height: 207px;
   background: url(../img/sk8er-3.png);
   background-size: cover;
-  box-shadow: 0 3px rgba(250, 250, 250, 0.4); }
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3); }
   .skateboarder-two::after {
     clear: both;
     content: "";
@@ -364,7 +375,7 @@ header {
   height: 208px;
   background: url(../img/sk8er-1.png);
   background-size: cover;
-  box-shadow: 0 3px rgba(250, 250, 250, 0.4); }
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3); }
   .skateboarder-three::after {
     clear: both;
     content: "";
@@ -403,7 +414,7 @@ header {
   background: url(../img/sk8er-2.png);
   background-size: cover;
   background-position: top right;
-  box-shadow: 0 3px rgba(250, 250, 250, 0.4); }
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3); }
   .skateboarder-four::after {
     clear: both;
     content: "";
@@ -417,7 +428,7 @@ header {
   background: white;
   padding: 10px;
   margin-top: 17px;
-  box-shadow: 0 3px rgba(250, 250, 250, 0.4);
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3);
   margin-bottom: 10px; }
 
 .skateboard {
@@ -438,7 +449,7 @@ header {
   padding: 15px 10px;
   margin-bottom: 50px;
   background: white;
-  box-shadow: 0 3px rgba(250, 250, 250, 0.4); }
+  box-shadow: 0 3px rgba(250, 250, 250, 0.3); }
   .contact:last-child {
     margin-right: 0; }
   .contact::after {
