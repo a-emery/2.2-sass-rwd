@@ -17,19 +17,19 @@
 
     <ul class="social-icons">
       <li class="social-icon nav-dots"><span class="nav-dot">&#8226;</span> <span class="nav-dot">&#8226;</span> <span class="nav-dot">&#8226;</span> <span class="nav-dot">&#8226;</span> <span class="nav-dot">&#8226;</span></li>
-      <li class="social-icon"><img src="assets/img/facebook.png" alt="" class="social-icon-img"></li>
-      <li class="social-icon"><img src="assets/img/rss.png" alt="" class="social-icon-img"></li>
-      <li class="social-icon"><img src="assets/img/twitter.png" alt="" class="social-icon-img"></li>
-      <li class="social-icon"><img src="assets/img/youtube.png" alt="" class="social-icon-img"></li>
+      <li class="social-icon"><a href="#"><img src="assets/img/facebook.png" alt="" class="social-icon-img"></a></li>
+      <li class="social-icon"><a href="#"><img src="assets/img/rss.png" alt="" class="social-icon-img"></a></li>
+      <li class="social-icon"><a href="#"><img src="assets/img/twitter.png" alt="" class="social-icon-img"></a></li>
+      <li class="social-icon"><a href="#"><img src="assets/img/youtube.png" alt="" class="social-icon-img"></a></li>
     </ul>
   </header>
 
   <nav class="top-nav">
     <ul class="top-nav-links">
-      <li class="top-nav-link">-- Sk8t News --</li>
-      <li class="top-nav-link">-- Skateboarders --</li>
-      <li class="top-nav-link">-- Board Design --</li>
-      <li class="top-nav-link">-- Contact Us --</li>
+      <a href="#" class="top-nav-link"><li>-- Sk8t News --</li></a>
+      <a href="#" class="top-nav-link"><li>-- Skateboarders --</li></a>
+      <a href="#" class="top-nav-link"><li>-- Board Design --</li></a>
+      <a href="#" class="top-nav-link"><li>-- Contact Us --</li></a>
     </ul>
   </nav>
 
@@ -75,11 +75,12 @@
 
   </div>
 
-  <div class="side-pointer">
-
-  </div>
-
   <div class="skateboarders">
+    <div class="side-pointer">
+      <span class="side-pointer-text">Skateboarders</span>
+    </div>
+    <div class="side-pointer-triangle-shadow"></div>
+    <div class="side-pointer-triangle"></div>
     <div class="skateboarder-block-one">
       <div class="another-block">
         <div class="skateboarder skateboarder-one"><h1 class="skateboarder-text">Lance Mountain</h1></div>
@@ -93,7 +94,7 @@
   </div>
 
   <div class="skateboards">
-    <ul class="skateboards">
+    <ul class="skateboards-list">
       <li class="skateboard"><img src="assets/img/sk8-1.png" alt="" class="skateboard-img"></li>
       <li class="skateboard"><img src="assets/img/sk8-2.png" alt="" class="skateboard-img"></li>
       <li class="skateboard"><img src="assets/img/sk8-3.png" alt="" class="skateboard-img"></li>
@@ -109,23 +110,21 @@
 
   <div class="contact">
     <div class="contact-info">
-      <h3>Contact Us for More Information</h3>
+      <h3 class="article-title contact-title">Contact Us for More Information</h3>
+      <p class="article-text contact-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas placeat aut suscipit perferendis unde modi beatae doloremque porro quaerat, est minus id ducimus nam commodi consectetur, sequi velit itaque. Nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem temporibus architecto rerum aliquam consequuntur optio sit obcaecati dolorum, fugiat inventore blanditiis ipsa dignissimos assumenda maxime quae cumque itaque neque eaque!</p>
       <ul class="social-contact-icons">
-        <li class="social-contact-icon"></li>
-        <li class="social-contact-icon"></li>
-        <li class="social-contact-icon"></li>
-        <li class="social-contact-icon"></li>
+        <li class="social-contact-icon"><a href="#"><img src="assets/img/twitter.png" alt="" class="social-contact-icon-img grayscale"></a></li>
+        <li class="social-contact-icon"><a href="#"><img src="assets/img/facebook.png" alt="" class="social-contact-icon-img grayscale"></a></li>
+        <li class="social-contact-icon"><a href="#"><img src="assets/img/youtube.png" alt="" class="social-contact-icon-img grayscale"></a></li>
+        <li class="social-contact-icon"><a href="#"><img src="assets/img/rss.png" alt="" class="social-contact-icon-img grayscale"></a></li>
       </ul>
     </div>
 
     <form action="">
-      <input type="text" placeholder="Name">
-
-      <input type="text" placeholder="Email">
-
-      <input type="text" placeholder="Your Message">
-
-      <input type="submit">
+      <input type="text" placeholder="Name" class="contact-name">
+      <input type="text" placeholder="Email" class="contact-email">
+       <textarea class="contact-message" placeholder="Your Message"></textarea>
+      <input type="submit" class="submit-button">
     </form>
 
   </div>
