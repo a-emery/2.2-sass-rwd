@@ -6,5 +6,129 @@ html {
 *::before {
   box-sizing: inherit; }
 
+/*----------COLORS----------*/
+/*----------HEADER----------*/
+/*----------REUSABLES----------*/
 body {
-  background-color: white; }
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(../img/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  background-position: top;
+  max-width: 50em;
+  margin: 0 auto;
+  border: thin solid green; }
+  body::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  border: 0;
+  margin: 0; }
+
+ul li {
+  padding: 0;
+  border: 0;
+  margin: 0; }
+
+header {
+  vertical-align: middle;
+  line-height: 50px; }
+  header::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.subscribe {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: 51.17883%;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%;
+  font-size: .82rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #666862;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 50px; }
+  .subscribe::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .subscribe:last-child {
+    margin-right: 0; }
+
+.nav-dots {
+  text-align: right;
+  padding-top: 4%;
+  vertical-align: middle;
+  line-height: 50px; }
+
+.nav-dot {
+  display: block;
+  line-height: 7px;
+  color: white;
+  vertical-align: middle; }
+
+.social-icons {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 50px; }
+  .social-icons::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .social-icons:last-child {
+    margin-right: 0; }
+
+.social-icon {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 5.85151%;
+  width: 15.3188%;
+  vertical-align: middle;
+  line-height: 50px; }
+  .social-icon::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .social-icon:last-child {
+    margin-right: 0; }
+
+.social-icon-img {
+  width: 100%;
+  width: 100%;
+  vertical-align: middle;
+  box-shadow: 0 3px black; }
+
+.top-nav-link {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  display: inline-block;
+  background-color: #b5302e;
+  padding: 4px 10px;
+  text-align: center;
+  box-shadow: 0 3px black;
+  margin: 10px 0; }
+  .top-nav-link:last-child {
+    margin-right: 0; }

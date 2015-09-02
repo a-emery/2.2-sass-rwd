@@ -1,7 +1,102 @@
 @import '../../bower_components/bourbon/app/assets/stylesheets/bourbon';
-
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
+/*----------COLORS----------*/
+
+$title-color: rgba(102, 104, 98, 1);
+$button-background: rgba(181, 48, 46, 1);
+
+/*----------HEADER----------*/
+
+$header-line-height: 50px;
+
+/*----------REUSABLES----------*/
+$bottom-shadow: 0 3px black;
+
 body {
-  background-color: white;
+  @include outer-container;
+  background: url(../img/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+  background-position: top;
+  max-width: em(800);
+  margin: 0 auto;
+  border: thin solid green;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+ul li {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+header {
+  vertical-align: middle;
+  @include clearfix;
+  line-height: $header-line-height;
+}
+
+.subscribe {
+  @include outer-container;
+  @include shift(6);
+  @include span-columns(2);
+  font-size: .82rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $title-color;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: $header-line-height;
+}
+
+.nav-dots {
+  text-align: right;
+  padding-top: 4%;
+  vertical-align: middle;
+  line-height: $header-line-height;
+}
+
+.nav-dot {
+  display: block;
+  line-height: 7px;
+  color: white;
+  vertical-align: middle;
+}
+
+.social-icons {
+  @include outer-container;
+  @include span-columns(4);
+  display: inline-block;
+  vertical-align: middle;
+  line-height: $header-line-height;
+}
+
+.social-icon {
+  @include outer-container;
+  @include span-columns(1 of 5);
+  vertical-align: middle;
+  line-height: $header-line-height;
+}
+
+.social-icon-img {
+  @include fill-parent;
+  width: 100%;
+  vertical-align: middle;
+  box-shadow: $bottom-shadow;
+}
+
+.top-nav-link {
+  @include span-columns(3);
+  display: inline-block;
+  background-color: $button-background;
+  padding: 4px 10px;
+  text-align: center;
+  box-shadow: $bottom-shadow;
+  margin: 10px 0;
 }
