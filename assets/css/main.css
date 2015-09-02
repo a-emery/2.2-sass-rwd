@@ -13,12 +13,11 @@ body {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  background: url(../img/bg.jpg) no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/bg.jpg) no-repeat center center fixed;
   background-size: cover;
   background-position: top;
   max-width: 50em;
-  margin: 0 auto;
-  border: thin solid green; }
+  margin: 0 auto; }
   body::after {
     clear: both;
     content: "";
@@ -47,15 +46,15 @@ header {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
-  margin-left: 51.17883%;
+  margin-left: 50.43209%;
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 14.70196%;
+  margin-right: 0.86418%;
+  width: 15.94652%;
   font-size: .82rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: #666862;
+  color: lightgrey;
   display: inline-block;
   vertical-align: middle;
   line-height: 50px; }
@@ -75,7 +74,7 @@ header {
 .nav-dot {
   display: block;
   line-height: 7px;
-  color: white;
+  color: lightgrey;
   vertical-align: middle; }
 
 .social-icons {
@@ -84,8 +83,8 @@ header {
   margin-right: auto;
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%;
+  margin-right: 0.86418%;
+  width: 32.75721%;
   display: inline-block;
   vertical-align: middle;
   line-height: 50px; }
@@ -102,10 +101,11 @@ header {
   margin-right: auto;
   float: left;
   display: block;
-  margin-right: 5.85151%;
-  width: 15.3188%;
+  margin-right: 2.09943%;
+  width: 18.32046%;
   vertical-align: middle;
-  line-height: 50px; }
+  line-height: 50px;
+  position: relative; }
   .social-icon::after {
     clear: both;
     content: "";
@@ -117,18 +117,256 @@ header {
   width: 100%;
   width: 100%;
   vertical-align: middle;
-  box-shadow: 0 3px black; }
+  box-shadow: 0 3px rgba(250, 250, 250, 0.6);
+  position: relative; }
+
+.top-nav::after {
+  clear: both;
+  content: "";
+  display: table; }
 
 .top-nav-link {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%;
+  margin-right: 0.86418%;
+  width: 24.35187%;
   display: inline-block;
   background-color: #b5302e;
+  color: white;
   padding: 4px 10px;
   text-align: center;
-  box-shadow: 0 3px black;
-  margin: 10px 0; }
+  box-shadow: 0 3px rgba(250, 250, 250, 0.6);
+  margin-top: 10px;
+  margin-bottom: 10px; }
   .top-nav-link:last-child {
+    margin-right: 0; }
+
+.banner {
+  background: url(../img/top-image.png);
+  background-size: cover;
+  display: block;
+  height: 250px;
+  line-height: 250px;
+  width: 100%;
+  border: 7px solid white;
+  margin: 10px 0;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 3px rgba(250, 250, 250, 0.6); }
+
+.overlay {
+  position: absolute;
+  opacity: .25; }
+
+.banner-logo {
+  position: relative;
+  height: 175px;
+  padding-left: 15px;
+  line-height: 250px;
+  vertical-align: middle; }
+
+.articles {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 0.86418%;
+  width: 100%;
+  line-height: 1rem; }
+  .articles::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .articles:last-child {
+    margin-right: 0; }
+  .articles::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.article {
+  float: left;
+  display: block;
+  margin-right: 0.86418%;
+  width: 32.75721%;
+  background: white;
+  border: thin solid green;
+  padding: 20px; }
+  .article:last-child {
+    margin-right: 0; }
+
+.article-title {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: normal; }
+
+.article-date {
+  margin: 0;
+  line-height: 3rem; }
+
+.article-text {
+  margin: 0;
+  font-size: .65rem; }
+
+.article-wrapper {
+  height: 255px;
+  overflow: hidden; }
+
+.read-more-link {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  color: #b5302e;
+  text-transform: uppercase;
+  font-size: .7rem;
+  font-weight: bold;
+  padding-top: 10px; }
+
+.skateboarders {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .skateboarders::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .skateboarders::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.skateboarder-text {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 3rem; }
+
+.skateboarder-block-one {
+  float: left;
+  display: block;
+  margin-right: 0.86418%;
+  width: 66.37861%;
+  margin-top: 30px;
+  line-height: 207px;
+  vertical-align: middle; }
+  .skateboarder-block-one:last-child {
+    margin-right: 0; }
+
+.skateboarder {
+  border: 4px solid white;
+  color: white; }
+
+.another-block {
+  float: left;
+  display: block;
+  margin-right: 1.30189%;
+  width: 100%;
+  margin-bottom: .3em; }
+  .another-block:last-child {
+    margin-right: 0; }
+
+.skateboarder-one {
+  display: inline-block;
+  float: left;
+  display: block;
+  margin-right: 1.30189%;
+  width: 49.34905%;
+  height: 207px;
+  background: url(../img/sk8er-4.png);
+  background-size: cover;
+  background-position: top right; }
+  .skateboarder-one:last-child {
+    margin-right: 0; }
+
+.skateboarder-two {
+  display: inline-block;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 1.30189%;
+  width: 49.34905%;
+  height: 207px;
+  background: url(../img/sk8er-3.png);
+  background-size: cover; }
+  .skateboarder-two::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .skateboarder-two:last-child {
+    margin-right: 0; }
+
+.skateboarder-three {
+  display: inline-block;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 1.30189%;
+  width: 100%;
+  height: 208px;
+  background: url(../img/sk8er-1.png);
+  background-size: cover; }
+  .skateboarder-three::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .skateboarder-three:last-child {
+    margin-right: 0; }
+
+.skateboarder-block-two {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 0.86418%;
+  width: 32.75721%;
+  margin-top: 30px; }
+  .skateboarder-block-two::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .skateboarder-block-two:last-child {
+    margin-right: 0; }
+
+.skateboarder-four {
+  display: inline-block;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  display: block;
+  margin-right: 2.63813%;
+  width: 100%;
+  height: 420px;
+  line-height: 420px;
+  vertical-align: middle;
+  background: url(../img/sk8er-2.png);
+  background-size: cover;
+  background-position: top right; }
+  .skateboarder-four::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .skateboarder-four:last-child {
+    margin-right: 0; }
+
+.skateboards {
+  display: inline-block;
+  width: 100%;
+  background: white; }
+
+.skateboard {
+  float: left;
+  display: block;
+  margin-right: 1.03881%;
+  width: 9.06507%;
+  display: inline-block; }
+  .skateboard:last-child {
     margin-right: 0; }
