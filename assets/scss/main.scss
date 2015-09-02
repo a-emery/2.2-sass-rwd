@@ -15,6 +15,9 @@ $header-line-height: 50px;
 /*----------REUSABLES----------*/
 $bottom-shadow: 0 3px rgba(250, 250, 250, .3);
 
+$small-desktop: new-breakpoint(max-width 1090px 9);
+
+
 body {
   // @include outer-container;
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/bg.jpg) no-repeat center center fixed;
@@ -219,6 +222,10 @@ header {
   left: -172px;
   padding: 10px;
   box-shadow: $bottom-shadow;
+
+  @include media($small-desktop) {
+    background: white;
+  }
 }
 
 .side-pointer-triangle {

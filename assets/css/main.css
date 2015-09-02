@@ -264,6 +264,9 @@ header {
   left: -172px;
   padding: 10px;
   box-shadow: 0 3px rgba(250, 250, 250, 0.3); }
+  @media screen and (max-width: 1090px) {
+    .side-pointer {
+      background: white; } }
 
 .side-pointer-triangle {
   height: 0;
