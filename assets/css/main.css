@@ -41,9 +41,6 @@ header {
     display: table; }
 
 .subscribe {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
   margin-left: 50.43209%;
   float: left;
   display: block;
@@ -56,10 +53,6 @@ header {
   display: inline-block;
   vertical-align: middle;
   line-height: 50px; }
-  .subscribe::after {
-    clear: both;
-    content: "";
-    display: table; }
   .subscribe:last-child {
     margin-right: 0; }
 
@@ -76,9 +69,6 @@ header {
   vertical-align: middle; }
 
 .social-icons {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
   float: left;
   display: block;
   margin-right: 0.86418%;
@@ -86,17 +76,10 @@ header {
   display: inline-block;
   vertical-align: middle;
   line-height: 50px; }
-  .social-icons::after {
-    clear: both;
-    content: "";
-    display: table; }
   .social-icons:last-child {
     margin-right: 0; }
 
 .social-icon {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
   float: left;
   display: block;
   margin-right: 2.09943%;
@@ -104,10 +87,6 @@ header {
   vertical-align: middle;
   line-height: 50px;
   position: relative; }
-  .social-icon::after {
-    clear: both;
-    content: "";
-    display: table; }
   .social-icon:last-child {
     margin-right: 0; }
 
@@ -183,15 +162,8 @@ header {
     margin-right: 0; }
 
 .articles {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
   line-height: 1rem;
   margin-top: 10px; }
-  .articles::after {
-    clear: both;
-    content: "";
-    display: table; }
 
 .article {
   float: left;
@@ -285,14 +257,7 @@ header {
   vertical-align: middle; }
 
 .skateboarders {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
   position: relative; }
-  .skateboarders::after {
-    clear: both;
-    content: "";
-    display: table; }
   .skateboarders::after {
     clear: both;
     content: "";
@@ -348,9 +313,6 @@ header {
 
 .skateboarder-two {
   display: inline-block;
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
   float: left;
   display: block;
   margin-right: 1.30189%;
@@ -359,18 +321,11 @@ header {
   background: url(../img/sk8er-3.png);
   background-size: cover;
   box-shadow: 0 3px rgba(250, 250, 250, 0.3); }
-  .skateboarder-two::after {
-    clear: both;
-    content: "";
-    display: table; }
   .skateboarder-two:last-child {
     margin-right: 0; }
 
 .skateboarder-three {
   display: inline-block;
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
   float: left;
   display: block;
   margin-right: 1.30189%;
@@ -379,34 +334,20 @@ header {
   background: url(../img/sk8er-1.png);
   background-size: cover;
   box-shadow: 0 3px rgba(250, 250, 250, 0.3); }
-  .skateboarder-three::after {
-    clear: both;
-    content: "";
-    display: table; }
   .skateboarder-three:last-child {
     margin-right: 0; }
 
 .skateboarder-block-two {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
   float: left;
   display: block;
   margin-right: 0.86418%;
   width: 32.75721%;
   margin-top: 31px; }
-  .skateboarder-block-two::after {
-    clear: both;
-    content: "";
-    display: table; }
   .skateboarder-block-two:last-child {
     margin-right: 0; }
 
 .skateboarder-four {
   display: inline-block;
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
   float: left;
   display: block;
   margin-right: 2.63813%;
@@ -418,10 +359,6 @@ header {
   background-size: cover;
   background-position: top right;
   box-shadow: 0 3px rgba(250, 250, 250, 0.3); }
-  .skateboarder-four::after {
-    clear: both;
-    content: "";
-    display: table; }
   .skateboarder-four:last-child {
     margin-right: 0; }
 

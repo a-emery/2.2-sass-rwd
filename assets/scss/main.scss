@@ -19,7 +19,6 @@ $small-desktop: new-breakpoint(max-width 1090px 9);
 
 
 body {
-  // @include outer-container;
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/bg.jpg) no-repeat center center fixed;
   background-size: cover;
   background-position: top;
@@ -51,7 +50,7 @@ header {
 }
 
 .subscribe {
-  @include outer-container;
+
   @include shift(6);
   @include span-columns(2);
   font-size: .82rem;
@@ -78,7 +77,6 @@ header {
 }
 
 .social-icons {
-  @include outer-container;
   @include span-columns(4);
   display: inline-block;
   vertical-align: middle;
@@ -86,7 +84,6 @@ header {
 }
 
 .social-icon {
-  @include outer-container;
   @include span-columns(1 of 5);
   vertical-align: middle;
   line-height: $header-line-height;
@@ -154,7 +151,7 @@ header {
 }
 
 .articles {
-  @include outer-container;
+   
   line-height: 1rem;
   margin-top: 10px;
 }
@@ -244,7 +241,7 @@ header {
 
 .skateboarders {
   @include clearfix;
-  @include outer-container;
+
   position: relative;
 }
 
@@ -288,7 +285,7 @@ header {
 
 .skateboarder-two {
   display: inline-block;
-  @include outer-container;
+
   @include span-columns(4 of 8);
   height: 207px;
   background: url(../img/sk8er-3.png);
@@ -298,7 +295,7 @@ header {
 
 .skateboarder-three {
   display: inline-block;
-  @include outer-container;
+
   @include span-columns(8 of 8);
   height: 208px;
   background: url(../img/sk8er-1.png);
@@ -307,14 +304,14 @@ header {
 }
 
 .skateboarder-block-two {
-  @include outer-container;
+
   @include span-columns(4);
   margin-top: 31px;
 }
 
 .skateboarder-four {
   display: inline-block;
-  @include outer-container;
+
   @include span-columns(4 of 4);
   height: 419px;
   line-height: 419px;
