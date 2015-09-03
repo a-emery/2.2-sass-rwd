@@ -394,7 +394,7 @@ header {
 
   @include media($small-mobile) {
     top: 0%;
-    transform: translateY(0%);
+    transform: translateY(0);
   }
 }
 

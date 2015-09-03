@@ -441,6 +441,10 @@ header {
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
+  @media screen and (max-width: 480px) {
+    .skateboarder-text {
+      top: 0%;
+      transform: translateY(0); } }
 
 .skateboarder-block-one {
   float: left;
