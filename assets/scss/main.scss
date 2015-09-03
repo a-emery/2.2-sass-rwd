@@ -393,7 +393,8 @@ header {
   transform: translateY(-50%);
 
   @include media($small-mobile) {
-    position: static;
+    top: 0%;
+    transform: translateY(0%);
   }
 }
 
