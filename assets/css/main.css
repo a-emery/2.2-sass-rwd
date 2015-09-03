@@ -80,12 +80,20 @@ header {
       font-size: 1rem; }
       .subscribe:last-child {
         margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .subscribe {
+      visibility: hidden;
+      position: absolute; } }
 
 .nav-dots {
   text-align: right;
   padding-top: 4%;
   vertical-align: middle;
   line-height: 50px; }
+  @media screen and (max-width: 480px) {
+    .nav-dots {
+      visibility: hidden;
+      position: absolute; } }
 
 .nav-dot {
   display: block;
@@ -111,6 +119,14 @@ header {
       width: 48.68094%; }
       .social-icons:last-child {
         margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .social-icons {
+      float: left;
+      display: block;
+      margin-right: 2.63813%;
+      width: 100%; }
+      .social-icons:last-child {
+        margin-right: 0; } }
 
 .social-icon {
   float: left;
@@ -128,7 +144,8 @@ header {
   width: 100%;
   vertical-align: middle;
   box-shadow: 0 3px rgba(250, 250, 250, 0.3);
-  position: relative; }
+  position: relative;
+  background: grey; }
   @media screen and (max-width: 768px) {
     .social-icon-img {
       max-height: 40px;
@@ -138,6 +155,12 @@ header {
   clear: both;
   content: "";
   display: table; }
+
+@media screen and (max-width: 768px) {
+  .top-nav-links::after {
+    clear: both;
+    content: "";
+    display: table; } }
 
 .top-nav-link {
   float: left;
@@ -171,6 +194,15 @@ header {
         margin-right: 0; }
       .top-nav-link:nth-child(2n+1) {
         clear: left; } }
+  @media screen and (max-width: 480px) {
+    .top-nav-link {
+      float: left;
+      display: block;
+      margin-right: 2.63813%;
+      width: 100%;
+      margin-bottom: 0; }
+      .top-nav-link:last-child {
+        margin-right: 0; } }
 
 .banner {
   background: url(../img/top-image.png);
@@ -594,6 +626,18 @@ header {
         margin-right: 0; }
       .skateboard:nth-child(5n+1) {
         clear: left; } }
+  @media screen and (max-width: 768px) {
+    .skateboard {
+      float: left;
+      display: block;
+      margin-right: 2.63813%;
+      width: 23.0214%; }
+      .skateboard:last-child {
+        margin-right: 0; }
+      .skateboard:nth-child(4n) {
+        margin-right: 0; }
+      .skateboard:nth-child(4n+1) {
+        clear: left; } }
 
 .contact {
   float: left;
@@ -711,6 +755,14 @@ img.grayscale {
       display: block;
       margin-right: 0.51672%;
       width: 4.50912%; }
+      .social-contact-icon:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 768px) {
+    .social-contact-icon {
+      float: left;
+      display: block;
+      margin-right: 1.03881%;
+      width: 9.06507%; }
       .social-contact-icon:last-child {
         margin-right: 0; } }
 
