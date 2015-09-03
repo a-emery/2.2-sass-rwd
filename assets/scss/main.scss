@@ -378,6 +378,14 @@ header {
     @include media($large-tablet) {
       visibility: hidden;
     }
+
+    @include media($mobile) {
+      visibility: hidden;
+    }
+
+    @include media($small-mobile) {
+      visibility: hidden;
+    }
 }
 
 .side-pointer-triangle-shadow {
@@ -392,6 +400,14 @@ header {
   }
 
   @include media($large-tablet) {
+    visibility: hidden;
+  }
+
+  @include media($mobile) {
+    visibility: hidden;
+  }
+
+  @include media($small-mobile) {
     visibility: hidden;
   }
 }
@@ -431,6 +447,12 @@ header {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+
+  @include media($mobile) {
+    padding-top: 20px;
+    top: 0%;
+    transform: translateY(0);
+  }
 
   @include media($small-mobile) {
     padding-top: 15px;

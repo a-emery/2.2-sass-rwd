@@ -434,6 +434,12 @@ header {
   @media screen and (max-width: 925px) and (min-width: 769px) {
     .side-pointer-triangle {
       visibility: hidden; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .side-pointer-triangle {
+      visibility: hidden; } }
+  @media screen and (max-width: 480px) {
+    .side-pointer-triangle {
+      visibility: hidden; } }
 
 .side-pointer-triangle-shadow {
   height: 0;
@@ -453,6 +459,12 @@ header {
       border-top: 100px solid transparent;
       top: 36px; } }
   @media screen and (max-width: 925px) and (min-width: 769px) {
+    .side-pointer-triangle-shadow {
+      visibility: hidden; } }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .side-pointer-triangle-shadow {
+      visibility: hidden; } }
+  @media screen and (max-width: 480px) {
     .side-pointer-triangle-shadow {
       visibility: hidden; } }
 
@@ -489,6 +501,11 @@ header {
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
+  @media screen and (max-width: 768px) and (min-width: 481px) {
+    .skateboarder-text {
+      padding-top: 20px;
+      top: 0%;
+      transform: translateY(0); } }
   @media screen and (max-width: 480px) {
     .skateboarder-text {
       padding-top: 15px;
