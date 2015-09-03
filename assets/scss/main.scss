@@ -391,6 +391,10 @@ header {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+
+  @include media($small-mobile) {
+    position: static;
+  }
 }
 
 .skateboarder-block-one {
