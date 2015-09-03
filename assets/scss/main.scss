@@ -282,6 +282,12 @@ header {
     text-align: center;
     font-weight: bolder;
     letter-spacing: 1rem;
+
+    @include media($mobile) {
+      @include shift(0);
+      @include span-columns(4);
+      width: 100%;
+    }
   }
 }
 
@@ -358,6 +364,10 @@ header {
   margin-top: 30px;
   line-height: 207px;
   vertical-align: middle;
+
+  @include media($mobile) {
+    @include span-columns(4);
+  }
 }
 
 .skateboarder {
@@ -378,16 +388,26 @@ header {
   background-size: cover;
   background-position: top right;
   box-shadow: $bottom-shadow;
+
+  @include media($mobile) {
+    @include span-columns(4);
+    height: 140px;
+    background-position: center;
+  }
 }
 
 .skateboarder-two {
   display: inline-block;
-
   @include span-columns(4 of 8);
   height: 207px;
   background: url(../img/sk8er-3.png);
   background-size: cover;
   box-shadow: $bottom-shadow;
+
+  @include media($mobile) {
+    @include span-columns(4);
+    height: 140px;
+  }
 }
 
 .skateboarder-three {
@@ -398,12 +418,22 @@ header {
   background: url(../img/sk8er-1.png);
   background-size: cover;
   box-shadow: $bottom-shadow;
+
+  @include media($mobile) {
+    @include span-columns(4);
+    height: 140px;
+  }
 }
 
 .skateboarder-block-two {
-
   @include span-columns(4);
   margin-top: 31px;
+
+  @include media($mobile) {
+    @include span-columns(4);
+    margin-top: .3em;
+    height: 140px;
+  }
 }
 
 .skateboarder-four {
@@ -417,6 +447,16 @@ header {
   background-size: cover;
   background-position: top right;
   box-shadow: $bottom-shadow;
+
+  @include media($mobile) {
+    @include span-columns(4);
+    margin-top: .3em;
+    height: 140px;
+  }
+}
+
+.skateboards-list {
+  width: 100%;
 }
 
 .skateboards {
@@ -427,12 +467,22 @@ header {
   margin-top: 17px;
   box-shadow: $bottom-shadow;
   margin-bottom: 10px;
+
+  @include media($mobile) {
+    @include span-columns(4);
+  }
 }
 
 .skateboard {
   @include span-columns(1 of 10);
   display: inline-block;
   text-align: center;
+
+  @include media($mobile) {
+    @include span-columns(1 of 5);
+    @include omega(5n);
+    height: 280px;
+  }
 }
 
 .contact {
@@ -446,10 +496,18 @@ header {
 
 .contact-info {
   @include span-columns(6.5 of 12);
+
+  @include media($mobile) {
+    @include span-columns(4);
+  }
 }
 
 form {
   @include span-columns(5.5 of 12);
+
+  @include media($mobile) {
+    @include span-columns(4);
+  }
 }
 
 .contact-title {
@@ -501,11 +559,19 @@ img.grayscale {
 .social-contact-icons {
   display: inline-block;
   margin-top: 10px;
+
+  @include media($mobile) {
+    margin-bottom: 20px;
+  }
 }
 
 .social-contact-icon {
   @include span-columns(1 of 15);
   display: inline-block;
+
+  @include media($mobile) {
+    @include span-columns(1 of 20);
+  }
 }
 
 .social-contact-icon-img {
