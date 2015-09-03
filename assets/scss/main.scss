@@ -15,15 +15,29 @@ $header-line-height: 50px;
 /*----------REUSABLES----------*/
 $bottom-shadow: 0 3px rgba(250, 250, 250, .3);
 
-$small-desktop: new-breakpoint(max-width 1090px 9);
+$small-desktop: new-breakpoint(max-width 1150px 9);
+$large-tablet: new-breakpoint(max-width 925px 9);
+$mobile: new-breakpoint(max-width 768px 4);
+
 
 
 body {
+  @include outer-container;
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/bg.jpg) no-repeat center center fixed;
   background-size: cover;
   background-position: top;
   max-width: em(800);
   margin: 0 auto;
+
+  @include media($large-tablet) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include media($mobile) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .container {
@@ -50,7 +64,6 @@ header {
 }
 
 .subscribe {
-
   @include shift(6);
   @include span-columns(2);
   font-size: .82rem;
@@ -60,6 +73,12 @@ header {
   display: inline-block;
   vertical-align: middle;
   line-height: $header-line-height;
+
+  @include media($mobile) {
+    @include shift(.3);
+    @include span-columns(1.7);
+    font-size: 1rem;
+  }
 }
 
 .nav-dots {
@@ -81,6 +100,10 @@ header {
   display: inline-block;
   vertical-align: middle;
   line-height: $header-line-height;
+
+  @include media($mobile) {
+    @include span-columns(2 of 4);
+  }
 }
 
 .social-icon {
@@ -88,6 +111,7 @@ header {
   vertical-align: middle;
   line-height: $header-line-height;
   position: relative;
+
 }
 
 .social-icon-img {
@@ -96,6 +120,11 @@ header {
   vertical-align: middle;
   box-shadow: $bottom-shadow;
   position: relative;
+
+  @include media($mobile) {
+    max-height: 40px;
+    max-width: 40px;
+  }
 }
 
 .top-nav {
@@ -114,6 +143,11 @@ header {
   margin-bottom: 10px;
   text-decoration: none;
   @include clearfix;
+
+  @include media($mobile) {
+    @include span-columns(2);
+    @include omega(2n);
+  }
 }
 
 .banner {
@@ -129,6 +163,11 @@ header {
   overflow: hidden;
   box-shadow: $bottom-shadow;
   @include clearfix;
+
+  @include media($mobile) {
+    height: 200px;
+    line-height: 200px;
+  }
 }
 
 .overlay {
@@ -140,8 +179,11 @@ header {
   position: relative;
   height: 175px;
   padding-left: 15px;
-  line-height: 250px;
   vertical-align: middle;
+
+  @include media($mobile) {
+    height: 100px;
+  }
 }
 
 .banner-buttons {
@@ -151,9 +193,9 @@ header {
 }
 
 .articles {
-   
   line-height: 1rem;
   margin-top: 10px;
+  @include clearfix;
 }
 
 .article {
@@ -163,6 +205,12 @@ header {
   @include clearfix;
   position: relative;
   box-shadow: $bottom-shadow;
+
+  @include media($mobile) {
+    @include span-columns(4);
+    height: 180px;
+    margin-bottom: 10px;
+  }
 }
 
 .article-title {
@@ -188,6 +236,10 @@ header {
   height: 255px;
   overflow: hidden;
   @include clearfix;
+
+  @include media($mobile) {
+    height: 125px;
+  }
 }
 
 .read-more-link {
@@ -199,13 +251,6 @@ header {
   font-size: .7rem;
   font-weight: bold;
   padding-top: 10px;
-}
-
-.side-pointer-triangle-shadow {
-  @include triangle(50px 10px, rgba(250, 250, 250, .3), right);
-  position: absolute;
-  top: 103px;
-  left: -12px;
 }
 
 .side-pointer {
@@ -221,7 +266,22 @@ header {
   box-shadow: $bottom-shadow;
 
   @include media($small-desktop) {
-    background: white;
+    height: 200px;
+    width: 50px;
+    left: -62px;
+    top: 33px;
+  }
+
+  @include media($large-tablet) {
+    position: static;
+    height: 50px;
+    @include shift(2 of 12);
+    @include span-columns(8 of 12);
+    margin-top: 10px;
+    margin-bottom: -20px;
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 1rem;
   }
 }
 
@@ -230,6 +290,31 @@ header {
     position: absolute;
     top: 100px;
     left: -12px;
+
+    @include media($small-desktop) {
+      @include triangle(200px 10px, $button-background, right);
+      top: 33px;
+    }
+
+    @include media($large-tablet) {
+      visibility: hidden;
+    }
+}
+
+.side-pointer-triangle-shadow {
+  @include triangle(50px 10px, rgba(250, 250, 250, .3), right);
+  position: absolute;
+  top: 103px;
+  left: -12px;
+
+  @include media($small-desktop) {
+    @include triangle(200px 10px, rgba(250, 250, 250, .3), right);
+    top: 36px;
+  }
+
+  @include media($large-tablet) {
+    visibility: hidden;
+  }
 }
 
 .side-pointer-text {
@@ -237,12 +322,24 @@ header {
   height: 30px;
   line-height: 30px;
   vertical-align: middle;
+
+  @include media($small-desktop) {
+    -webkit-transform: rotate(-90deg);
+    -webkit-transform-origin:right, top;
+    position: absolute;
+    left: -45px;
+    top: 80px;
+  }
+
+  @include media($large-tablet) {
+    -webkit-transform: none;
+    position: static;
+  }
 }
 
 .skateboarders {
-  @include clearfix;
-
   position: relative;
+  @include clearfix;
 }
 
 .skateboarder-text {

@@ -10,11 +10,26 @@ html {
 /*----------HEADER----------*/
 /*----------REUSABLES----------*/
 body {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../img/bg.jpg) no-repeat center center fixed;
   background-size: cover;
   background-position: top;
   max-width: 50em;
   margin: 0 auto; }
+  body::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (max-width: 925px) {
+    body {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media screen and (max-width: 768px) {
+    body {
+      padding-left: 10px;
+      padding-right: 10px; } }
 
 .container::after {
   clear: both;
@@ -55,6 +70,16 @@ header {
   line-height: 50px; }
   .subscribe:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .subscribe {
+      margin-left: 2.5216%;
+      float: left;
+      display: block;
+      margin-right: 2.63813%;
+      width: 40.98308%;
+      font-size: 1rem; }
+      .subscribe:last-child {
+        margin-right: 0; } }
 
 .nav-dots {
   text-align: right;
@@ -78,6 +103,14 @@ header {
   line-height: 50px; }
   .social-icons:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .social-icons {
+      float: left;
+      display: block;
+      margin-right: 2.63813%;
+      width: 48.68094%; }
+      .social-icons:last-child {
+        margin-right: 0; } }
 
 .social-icon {
   float: left;
@@ -96,6 +129,10 @@ header {
   vertical-align: middle;
   box-shadow: 0 3px rgba(250, 250, 250, 0.3);
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .social-icon-img {
+      max-height: 40px;
+      max-width: 40px; } }
 
 .top-nav::after {
   clear: both;
@@ -122,6 +159,18 @@ header {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 768px) {
+    .top-nav-link {
+      float: left;
+      display: block;
+      margin-right: 2.63813%;
+      width: 48.68094%; }
+      .top-nav-link:last-child {
+        margin-right: 0; }
+      .top-nav-link:nth-child(2n) {
+        margin-right: 0; }
+      .top-nav-link:nth-child(2n+1) {
+        clear: left; } }
 
 .banner {
   background: url(../img/top-image.png);
@@ -139,6 +188,10 @@ header {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 768px) {
+    .banner {
+      height: 200px;
+      line-height: 200px; } }
 
 .overlay {
   position: absolute;
@@ -148,8 +201,10 @@ header {
   position: relative;
   height: 175px;
   padding-left: 15px;
-  line-height: 250px;
   vertical-align: middle; }
+  @media screen and (max-width: 768px) {
+    .banner-logo {
+      height: 100px; } }
 
 .banner-buttons {
   float: left;
@@ -164,6 +219,10 @@ header {
 .articles {
   line-height: 1rem;
   margin-top: 10px; }
+  .articles::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .article {
   float: left;
@@ -180,6 +239,16 @@ header {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 768px) {
+    .article {
+      float: left;
+      display: block;
+      margin-right: 2.63813%;
+      width: 100%;
+      height: 180px;
+      margin-bottom: 10px; }
+      .article:last-child {
+        margin-right: 0; } }
 
 .article-title {
   font-size: 1.1rem;
@@ -204,6 +273,9 @@ header {
     clear: both;
     content: "";
     display: table; }
+  @media screen and (max-width: 768px) {
+    .article-wrapper {
+      height: 125px; } }
 
 .read-more-link {
   text-decoration: none;
@@ -214,16 +286,6 @@ header {
   font-size: .7rem;
   font-weight: bold;
   padding-top: 10px; }
-
-.side-pointer-triangle-shadow {
-  height: 0;
-  width: 0;
-  border-bottom: 25px solid transparent;
-  border-left: 10px solid rgba(250, 250, 250, 0.3);
-  border-top: 25px solid transparent;
-  position: absolute;
-  top: 103px;
-  left: -12px; }
 
 .side-pointer {
   width: 160px;
@@ -236,9 +298,28 @@ header {
   left: -172px;
   padding: 10px;
   box-shadow: 0 3px rgba(250, 250, 250, 0.3); }
-  @media screen and (max-width: 1090px) {
+  @media screen and (max-width: 1150px) {
     .side-pointer {
-      background: white; } }
+      height: 200px;
+      width: 50px;
+      left: -62px;
+      top: 33px; } }
+  @media screen and (max-width: 925px) {
+    .side-pointer {
+      position: static;
+      height: 50px;
+      margin-left: 16.8107%;
+      float: left;
+      display: block;
+      margin-right: 0.86418%;
+      width: 66.37861%;
+      margin-top: 10px;
+      margin-bottom: -20px;
+      text-align: center;
+      font-weight: bolder;
+      letter-spacing: 1rem; }
+      .side-pointer:last-child {
+        margin-right: 0; } }
 
 .side-pointer-triangle {
   height: 0;
@@ -249,12 +330,55 @@ header {
   position: absolute;
   top: 100px;
   left: -12px; }
+  @media screen and (max-width: 1150px) {
+    .side-pointer-triangle {
+      height: 0;
+      width: 0;
+      border-bottom: 100px solid transparent;
+      border-left: 10px solid #b5302e;
+      border-top: 100px solid transparent;
+      top: 33px; } }
+  @media screen and (max-width: 925px) {
+    .side-pointer-triangle {
+      visibility: hidden; } }
+
+.side-pointer-triangle-shadow {
+  height: 0;
+  width: 0;
+  border-bottom: 25px solid transparent;
+  border-left: 10px solid rgba(250, 250, 250, 0.3);
+  border-top: 25px solid transparent;
+  position: absolute;
+  top: 103px;
+  left: -12px; }
+  @media screen and (max-width: 1150px) {
+    .side-pointer-triangle-shadow {
+      height: 0;
+      width: 0;
+      border-bottom: 100px solid transparent;
+      border-left: 10px solid rgba(250, 250, 250, 0.3);
+      border-top: 100px solid transparent;
+      top: 36px; } }
+  @media screen and (max-width: 925px) {
+    .side-pointer-triangle-shadow {
+      visibility: hidden; } }
 
 .side-pointer-text {
   display: inline-block;
   height: 30px;
   line-height: 30px;
   vertical-align: middle; }
+  @media screen and (max-width: 1150px) {
+    .side-pointer-text {
+      -webkit-transform: rotate(-90deg);
+      -webkit-transform-origin: right, top;
+      position: absolute;
+      left: -45px;
+      top: 80px; } }
+  @media screen and (max-width: 925px) {
+    .side-pointer-text {
+      -webkit-transform: none;
+      position: static; } }
 
 .skateboarders {
   position: relative; }
