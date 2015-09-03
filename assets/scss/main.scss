@@ -310,13 +310,18 @@ header {
     text-align: center;
     font-weight: bolder;
     letter-spacing: 1rem;
+  }
 
     @include media($mobile) {
       @include shift(0);
       @include span-columns(4);
       width: 100%;
     }
-  }
+
+    @include media($small-mobile) {
+      letter-spacing: normal;
+    }
+
 }
 
 .side-pointer-triangle {
@@ -369,6 +374,7 @@ header {
     -webkit-transform: none;
     position: static;
   }
+
 }
 
 .skateboarders {
@@ -512,7 +518,7 @@ header {
     height: 280px;
   }
 
-  @include media($mobile) {
+  @include media($small-mobile) {
     @include span-columns(1 of 4);
     @include omega(4n);
   }

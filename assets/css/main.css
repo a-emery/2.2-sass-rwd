@@ -352,7 +352,7 @@ header {
       letter-spacing: 1rem; }
       .side-pointer:last-child {
         margin-right: 0; } }
-  @media screen and (max-width: 925px) and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     .side-pointer {
       margin-left: 0%;
       float: left;
@@ -362,6 +362,9 @@ header {
       width: 100%; }
       .side-pointer:last-child {
         margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .side-pointer {
+      letter-spacing: normal; } }
 
 .side-pointer-triangle {
   height: 0;
@@ -626,7 +629,7 @@ header {
         margin-right: 0; }
       .skateboard:nth-child(5n+1) {
         clear: left; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     .skateboard {
       float: left;
       display: block;
